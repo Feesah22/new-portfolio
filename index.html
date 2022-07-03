@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 style="font-size: 33px;"><b>Nafeesah Shah</b></h4>
+            <img src="images/me.jpeg" style="width:100%;" class="w3-round"><br><br>
+           
+            
+        </div>
+        <div class="w3-bar-block">
+            <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        </div>
+        <div class="w3-panel w3-large ">
+            
+            
+           <a href="https://github.com/Feesah22"><i class="fa fa-github w3-hover-opacity w3-padding"></i></a>
+            <a href="linkedin.com/in/nafeesah-shah"></a><i class="fa fa-linkedin w3-hover-opacity w3-padding"></i></a>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+            <a href="#"><img src="" style="width:65px;"
+                    class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1 class="w3-black">My Portfolio </h1><b> <h7>If you click on the picture you can go to the full application</b></h7>
+            </div>
+        </header>
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container" style="padding:20px;">
+               <a href="https://todolistorganizer.netlify.app/"><img src="images/TODO.png" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                <div class="w3-container w3-white">
+                    <p><b>To Do List Organizer</b></p>
+                    <h6 style="font-size: 10px;">JavaScript, CSS, HTML </h6>
+                    <p w-3="white" ></p>
+                    <!-- <p style="font-size: 12px;">Organizer used to track your daily task. It calculates how many tasks you have to complete. While also deducting count
+                    when you cross-out tasks to indicate completion. We know we all make mistakes therefore we couldn't forget the delete
+                    feature.</p> -->
+                </div>
+            </div>
+            <div class="w3-third w3-container " style="padding:20px;">
+                <a href="https://dog-service-app.herokuapp.com/"><img src="images/DOG APP.png" alt="Norway" style="width:100%"
+                        class="w3-hover-opacity"></a>
+                <div class="w3-container w3-white">
+                    <p><b>Dog Service App</b></p>
+                    <h6 style="font-size: 10px;">JavaScript, CSS, ejs,Node.js,MONGODB </h6>
+                    <p w-3="white"></p>
+                    <!-- <p style="font-size: 12px;">Dog service app that prompts you to request services based on day/time and task needed for your pup. The tasks consist
+                    of dog washing , training , etc. If the service time and date are available the admin will mark the reservation.Your
+                    reservation will turn red for confirmation.</p> -->
+                </div>
+            </div>
+            <div class="w3-third w3-container" style="padding:20px;">
+                <a href="https://vent-you-are-not-alone.herokuapp.com/"><img src="images/vent.png" alt="Norway" style="width:100%"
+                        class="w3-hover-opacity"></a>
+                <div class="w3-container w3-white">
+                    <p><b>You Are Not Alone Anonymous </b></p>
+                    <h6 style="font-size: 10px;">JavaScript, bootstrap, ejs, node.js, MongoDB </h6>
+                    <p w-3="white"></p>
+                    <!-- <p style="font-size: 12px;">Full stack applications allow you to vent anonymously. It has image upload capability, a private profile just you can
+                    see, an anonymous feed everybody can see, and a comment feature. It also allows you to like a post and open individual
+                    posts.</p> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container " style="padding:20px;">
+                <a href="https://bike-trail.netlify.app"><img src="images/bike trail.png" alt="Norway" style="width:100%"
+                        class="w3-hover-opacity"></a>
+                <div class="w3-container w3-white">
+                    <p><b>Bike API Trail Locator</b></p>
+                <h6 style="font-size: 10px;">JavaScript, CSS, HTML, API </h6>
+                <p w-3="white"></p>
+                    <!-- <p style="font-size: 12px;">API app that allows you to put your address in input. Then it will show you the closest bike trails to you. It includes
+                    pictures, bike trail distance, and description</p> -->
+                </div>
+            </div>
+            <div class="w3-third w3-container " style="padding:20px;">
+                <a href="https://nasa-stations-weather.netlify.app"><img src="images/NASASTATION.png" alt="Norway" style="width:100%"
+                        class="w3-hover-opacity"></a>
+                <div class="w3-container w3-white">
+                    <p><b>NASA station Locator</b></p>
+                    <h6 style="font-size: 10px">JavaScript, CSS, HTML, complex API </h6>
+                    <p w-3="white"></p>
+                    <!-- <p style="font-size: 12px;">API app that lists all of NASA PlayStation locations, with the temperature in Fahrenheit, and the weather (rain, cloudy,etc) in the area.</p> -->
+                </div>
+            </div>
+            <div class="w3-third w3-container" style="padding:20px;">
+                <a href="https://fashion-matching-game.netlify.app"><img src="images/Matching Cards.png" alt="Norway" style="width:100%"
+                        class="w3-hover-opacity"></a>
+                <div class="w3-container w3-white">
+                    <p><b>Fashion matching card game</b></p>
+                    <h6 style="font-size: 10px">JavaScript, CSS, HTML </h6>
+                    <p w-3="white"></p>
+                    <!-- <p style="font-size: 12px;">Matching card game using a number randomizer to identify a matching image. It consists of an automatic card flipper.
+                    It also has a new game feature.</p> -->
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- Images of Me -->
+        <div class="w3-row-padding w3-padding-16 " id="about">
+            
+            <div class="w3-container">
+                <h4 class="w3-black" style="font-size: 33px"><b>About Me</b></h4>
+                
+            </div>
+        </div>
+
+        <div class="w3-container w3-padding-large" style="margin-bottom:32px ">
+            <img src="images/vets.jpeg" alt="Me" style="width:100%">
+            <p>I am a Proud Software Engineer, and War Veteran with a love for numbers and design. I am an adventure guru and a
+            critical thinker, always looking for excitement and troubleshooting. Due to a shortage overseas i was put into a new
+            position as a information management specialis. Due to the duty at hand, I dedicate myself to technology. Overseas is
+            where I found my love for technology. The never-ending solutions to one problem and the way one dot can crash a site
+            pulled me in more. Software Engineering has become my new "Law and Order" (women, you understand). As a Software
+            Engineer , my intriguing imagination for design, my love for critical thinking and finding solutions. I will bring a
+            great team player and a strong individual soldier to your company.</p>
+            <hr>
+            
+            <div class="w3-white">
+            <h4>Technical Skills</h4>
+            <!-- Progress bars / Skills -->
+            <ul class="progess-bars">
+                <li>
+                    <div class="progress">
+                        DESIGN
+                    </div>
+                </li>
+                <li>
+                    <div class="progress">
+                        JavaScript
+                    </div>
+                </li>
+                <li>
+                    <div class="progress">
+                        HTML
+                    </div>
+                </li>
+                <li>
+                    <div class="progress">
+                        CSS
+                    </div>
+                </li>
+                <li>
+                    <div class="progress">
+                        TROUBLESHOOTING
+                    </div>
+                </li>
+                <li>
+                    <div class="progress">
+                        NODE.JS
+                    </div>
+                </li>
+                <li>
+                    <div class="progress">
+                        MONGODB
+                    </div>
+                </li>
+            </ul>
+
+            </div>
+                <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                   <a href="images/resume.png"><i class="fa fa-download w3-margin-right"></i>Resume
+                </button></a>
+                
+            </p>
+            <hr>
+
+            
+            
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-large w3-grey">
+            <h4 id="contact" class= "w3-black" style="font-size: 36px"><b>Contact Me</b></h4>
+            <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+                <div class="w3-third w3-dark-grey">
+                    <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>nafeesah.q.shah@gmail.com</p>
+                </div>
+                <div class="w3-third w3-teal">
+                    <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>No specify location. I Serve the World</p>
+                </div>
+                <div class="w3-third w3-dark-grey">
+                    <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+                    <p><a href="https://calendly.com/nafeesah-software-engineer">Schedule a 30 minute consultation</a></p>
+                   
+                </div>
+            </div>
+            <hr class="w3-opacity">
+            <form action="https://formsubmit.co/nafeesah.q.shah@gmail.com" method="POST">
+                <div class="w3-section">
+                    <label>Name</label>
+                    <input class="w3-input w3-border" type="text" name="Name" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input w3-border" type="text" name="Email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Message</label>
+                    <input class="w3-input w3-border" type="text" name="Message" required>
+                </div>
+                <button type="submit" class="w3-button w3-black w3-margin-bottom"><i
+                        class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-black">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>Personal</h3>
+                    <p>I take the personal appraoch. i enjoy getting to know my clients and fulfiling their vison. I like to know how's your day
+                    and understand what you like for your clients expereience . We will get the job done. Smile we are one step closer</p>
+                    
+                </div>
+
+                <div class="w3-third">
+                    
+                    <ul class="w3-ul w3-hoverable">
+                        <li class="w3-padding-16">
+                            <img src="" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large"></span><br>
+                           
+                        </li>
+                        <li class="w3-padding-16">
+                            <img src="" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large"></span><br>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>Guarantee</h3>
+                    <p>
+                    We assure smiles. If you do not approve of your website or have any concerns we will be glad to take appropriate
+                    protocols
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+
+        
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
